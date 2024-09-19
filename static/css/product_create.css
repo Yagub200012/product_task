@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 20px;
+}
+
+form input, form textarea {
+    width: 90%; 
+    padding: 10px;
+    margin: 10px auto; /* Вертикальные отступы между полями */
+    color: #ffffff;
+    border: none;
+    background-color: #181818;
+    border-radius: 20px;
+    font-size: 16px;
+    display: block;
+}
+
+form input:hover, form textarea:hover {
+    background-color: #131313;
+    transition: 0.5s;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #64ff98;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45af69;
+    transition: 0.5s;
+}
+
+table {
+    margin: 0 auto;
+    width: 420px;
+	border: none;
+}
+
+table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #64ff98;
+	font-size: 14px;
+}
+
+table thead tr th:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+table thead tr th:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+table tbody td {
+    color: #ffffff;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+table tbody tr:nth-child(even){
+	background: #1d1d1d;
+}
+
+table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
