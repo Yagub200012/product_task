@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('product-form');
     const productList = document.getElementById('product-list');
 
-    // Функция для получения всех продуктов
+
     function fetchProducts() {
         fetch('/api/products/')
             .then(response => response.json())
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fetchProducts();
 
-    // Отправка формы
+
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
