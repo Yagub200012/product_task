@@ -47,7 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     form.reset();
                     fetchProducts();
                 } else {
-                    alert('Ошибка при добавлении продукта');
+                    return response.json().then(errorData => {
+                        errorMessage.textContent = errorData.price || 'Ошибка при создании продукта.';
+                        errorMessage.style.display = 'block';
+                    });
                 }
             });
     });
